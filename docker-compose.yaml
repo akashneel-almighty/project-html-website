@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  akashneel-ui-app2:
+    image: akashneel-web2:app$BUILD_NUMBER
+    build: .
+    container_name: akashneel-newc2
+    ports:
+    - 4269:80
