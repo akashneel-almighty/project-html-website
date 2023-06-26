@@ -30,7 +30,7 @@ pipeline {
         stage('testing container app') {
             steps {
                 echo 'testing container health page with curl'
-                sh 'curl -f http://localhost:4269/health.html'
+                sh 'curl -f http://localhost:4269/index.html'
             }
             
         }
